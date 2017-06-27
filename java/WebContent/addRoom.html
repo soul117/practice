@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{text-align:center;}
+ table {
+	padding: 10px; 
+    width: 40%; /* Ширина таблицы */
+    border: 1px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+   }
+</style>
+</head>
+<body>
+<div>
+	<p>Щоб додати запис в таблицю "Кімнати" заповніть усі поля та написніть додати</p>
+	<form action="OperateTable" target="forTable" method="POST">
+	<table>
+		<tr><td>
+			Номер кімнати </td> <td><input type="text" name="roomNumber" required>
+		</td></tr>
+		<tr>
+			<td>Тип</td><td><input type="text" name="roomType" required></td>
+		</tr>
+		<tr>
+			<td>Розмір</td><td><input type="text"  name="roomSize" required></td>
+		</tr>
+		<tr>
+		<td>
+			Зарезервовано</td> <td><input type="text" name="roomReserved" required>
+		</td></tr>
+			<tr><td>
+			Кімната заселена</td> <td><input type="text" name="roomInhabited" required>
+		</td></tr>
+		</table><br>
+		<input type="submit" value="Додати">
+		<input type="reset" value="Очистити">
+		<br>
+	</form>
+	</div>
+</body>
+</html>
