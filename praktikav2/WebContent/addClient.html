@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{text-align:center;}
+ table {
+	padding: 10px; 
+    width: 40%; /* Ширина таблицы */
+    border: 1px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+   }
+</style>
+</head>
+<body>
+<div>
+	<p>Щоб додати запис в таблицю "Clients" заповніть усі поля та написніть додати</p>
+	<form action="OperateTable" target="forTable" method="POST">
+	<table>
+		<tr>
+			<td>П.І.Б.</td><td><input type="text"  name="clientName" required></td>
+		</tr>
+		<tr>
+		<td>
+			Телефон</td> <td><input type="text" name="clientPhone" required>
+		</td></tr>
+			<tr><td>
+		 Order_ID</td> <td><input type="text" name="client_order_id" required>
+		</td></tr>
+		</table><br>
+		<input type="submit" value="Додати">
+		<input type="reset" value="Очистити">
+		<br>
+	</form>
+	</div>
+</body>
+</html>

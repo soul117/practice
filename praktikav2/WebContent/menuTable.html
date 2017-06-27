@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>form{text-align:left;}
+		
+</style>
+</head>
+<body>
+<div align='center'>
+<form action="SelectTable" target="forTable" name="selectTable"
+			method="POST">
+			<b>Виберіть таблицю</b>
+			<br><br>
+					<input type="radio" name="className" value="Room" id='room'>
+					<label for='room'> Room</label><br>
+					<input type="radio" name="className"
+						value="Client" id='client'> <label for='client'>Client</label><br>
+			
+					<label for='order'><input type="radio" name="className"
+						value="Order" id='order'> Order</label><br><br>
+		
+			<input type="submit" value="Завантажити"><br>
+		</form>
+<hr noshade>
+		<form action="SelectQuery" target="forTable" name="selectQuery"
+			method="POST">
+			<b>Вибір запиту до бази:</b><br><br>
+			<select size="1" name="query">
+				<option value="freeRooms">Показати вільні кімнати
+				<option value="luxRooms">Показати кімнати люкс
+			</select>
+			<p>
+				<input type="submit" value="Виконати запит">
+			<p>
+		</form>
+</div>
+</body>
+</html>
